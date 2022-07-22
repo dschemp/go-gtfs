@@ -1,14 +1,21 @@
 package types
 
+type ServiceEnum Enum
+
+const (
+	ServiceUnavailable ServiceEnum = iota
+	ServiceAvailable
+)
+
 type Calendar struct {
 	ServiceID ID
-	Monday    Enum
-	Tuesday   Enum
-	Wednesday Enum
-	Thursday  Enum
-	Friday    Enum
-	Saturday  Enum
-	Sunday    Enum
+	Monday    ServiceEnum
+	Tuesday   ServiceEnum
+	Wednesday ServiceEnum
+	Thursday  ServiceEnum
+	Friday    ServiceEnum
+	Saturday  ServiceEnum
+	Sunday    ServiceEnum
 	StartDate Date
 	EndDate   Date
 }

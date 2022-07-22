@@ -63,3 +63,21 @@ type Timezone string
 // URL refers to any URI starting with http:// or https://.
 // The URL has to be escaped properly.
 type URL string
+
+type ContinuousPickupEnum Enum
+
+const (
+	ContinuousPickupPossible ContinuousPickupEnum = iota
+	ContinuousPickupNotPossible
+	ContinuousPickupArrangeWithAgency
+	ContinuousPickupArrangeWithDriver
+)
+
+type ContinuousDropOffEnum Enum
+
+const (
+	ContinuousDropOffPossible ContinuousDropOffEnum = iota
+	ContinuousDropOffNotPossible
+	ContinuousDropOffArrangeWithAgency
+	ContinuousDropOffArrangeWithDriver
+)
