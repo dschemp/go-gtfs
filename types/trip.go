@@ -24,14 +24,14 @@ const (
 )
 
 type Trip struct {
-	ID
-	RouteID              ID
-	ServiceID            ID
-	Destination          string // headsign
-	ShortName            string
-	Direction            DirectionEnum
-	BlockID              ID
-	ShapeID              ID
-	WheelchairAccessible WheelchairAccessibleEnum
-	BikesAllowed         BikesAllowedEnum
+	ID                   `csv:"trip_id"`
+	RouteID              ID                       `csv:"route_id"`
+	ServiceID            ID                       `csv:"service_id"`
+	Destination          string                   `csv:"trip_headsign"` // headsign
+	ShortName            string                   `csv:"trip_short_name"`
+	Direction            DirectionEnum            `csv:"direction_id"`
+	BlockID              ID                       `csv:"block_id"`
+	ShapeID              ID                       `csv:"shape_id"`
+	WheelchairAccessible WheelchairAccessibleEnum `csv:"wheelchair_accessible"`
+	BikesAllowed         BikesAllowedEnum         `csv:"bikes_allowed"`
 }

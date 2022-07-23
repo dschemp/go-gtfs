@@ -8,7 +8,7 @@ const (
 )
 
 type CalendarDate struct {
-	ServiceID ID
-	Date
-	ExceptionType ExceptionTypeEnum
+	ServiceID     ID `csv:"service_id"`
+	Date          `csv:"date"`
+	ExceptionType ExceptionTypeEnum `csv:"exception_type"`
 }

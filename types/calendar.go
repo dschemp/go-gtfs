@@ -8,14 +8,14 @@ const (
 )
 
 type Calendar struct {
-	ServiceID ID
-	Monday    ServiceEnum
-	Tuesday   ServiceEnum
-	Wednesday ServiceEnum
-	Thursday  ServiceEnum
-	Friday    ServiceEnum
-	Saturday  ServiceEnum
-	Sunday    ServiceEnum
-	StartDate Date
-	EndDate   Date
+	ServiceID ID          `csv:"service_id"`
+	Monday    ServiceEnum `csv:"monday"`
+	Tuesday   ServiceEnum `csv:"tuesday"`
+	Wednesday ServiceEnum `csv:"wednesday"`
+	Thursday  ServiceEnum `csv:"thursday"`
+	Friday    ServiceEnum `csv:"friday"`
+	Saturday  ServiceEnum `csv:"saturday"`
+	Sunday    ServiceEnum `csv:"sunday"`
+	StartDate Date        `csv:"start_date"`
+	EndDate   Date        `csv:"end_date"`
 }
